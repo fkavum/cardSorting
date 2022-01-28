@@ -18,11 +18,11 @@ namespace CardSorting.GamePlay
         public Deck()
         {
             _cards = new Card[52];
-            foreach (int cardTypeValue in Enum.GetValues(typeof(Card.CardType)))
+            foreach (int cardTypeValue in Enum.GetValues(typeof(Card.CardTypeEnum)))
             {
                 for (int i = 1; i <= 13; i++)
                 {
-                    _cards[(i * cardTypeValue) - 1] = new Card(i, (Card.CardType) cardTypeValue);
+                    _cards[(i * cardTypeValue) - 1] = new Card(i, (Card.CardTypeEnum) cardTypeValue);
                 }
             }
         }

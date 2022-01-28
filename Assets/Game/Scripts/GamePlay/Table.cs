@@ -10,8 +10,24 @@ namespace CardSorting.GamePlay
         {
             _cards = new Deck().Shuffle().TakeCards(tableCardCount);
         }
-        
-        
-        
+        public void ChangeCards(List<Card> newCards)
+        {
+            _cards = newCards;
+        }
+
+        public void SortSequential()
+        {
+            
+        }
+
+        public void SortSameNumber()
+        {
+            
+        }
+
+        public void SortSmart()
+        {
+            
+        }
     }
 }

@@ -4,23 +4,46 @@ namespace CardSorting.GamePlay
 {
     public class Card
     {
+        
         private readonly int _cardNumber;
-        private readonly CardType _cardType;
+        private readonly CardTypeEnum _cardType;
         private readonly int _deckCardNumber;
 
-        public Card(int cardNumber, CardType cardType)
+        /// <summary>
+        /// Starts from 1(includes) to 13(includes)
+        /// </summary>
+        public int CardNumber => _cardNumber;
+        public CardTypeEnum CardType => _cardType;
+        
+        /// <summary>
+        /// Starts from 1(includes) to 52(includes)
+        /// </summary>
+        public int DeckCardNumber => _deckCardNumber;
+
+        public Card(int cardNumber, CardTypeEnum cardType)
         {
             _cardNumber = cardNumber;
             _cardType = cardType;
-            _deckCardNumber = cardNumber * (int) cardType;
+            _deckCardNumber = cardNumber + (13 * ((int) cardType -1));
         }
-
-        public enum CardType
+        
+        public Card(int deckCardNumber)
         {
-            Clubs = 1,
+            if(_cardNumber > 52) return;
+            
+            _deckCardNumber = deckCardNumber;
+            _cardNumber = deckCardNumber % 13;
+            _cardNumber = _cardNumber == 0 ? 13 : _cardNumber;
+            
+            _cardType = (CardTypeEnum)(((_deckCardNumber - _cardNumber) / 13) +1);
+        }
+ 
+        public enum CardTypeEnum
+        {
+            Spades = 1,
             Diamonds = 2,
             Hearts = 3,
-            Spades = 4,
+            Clubs = 4,
         }
     }
 }
