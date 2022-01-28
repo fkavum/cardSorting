@@ -10,7 +10,6 @@ namespace CardSorting.UI
     [RequireComponent(typeof(RectTransform))]
     public class SafeAreaFitter : MonoBehaviour
     {
-      
         void Awake()
         {
             RectTransform rectTransfrom = GetComponent<RectTransform>();
