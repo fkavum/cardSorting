@@ -1,0 +1,1476 @@
+fileFormatVersion: 2
+guid: c6105042799944344a27575fc9a1ab9d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 351537832860959732
+    second: CardFronts_Atlas_0
+  - first:
+      213: -2113140703122468928
+    second: CardFronts_Atlas_1
+  - first:
+      213: -311428804907520433
+    second: CardFronts_Atlas_2
+  - first:
+      213: -7518171119982503953
+    second: CardFronts_Atlas_3
+  - first:
+      213: 1050700442129856612
+    second: CardFronts_Atlas_4
+  - first:
+      213: -1399552612638406975
+    second: CardFronts_Atlas_5
+  - first:
+      213: -3176646916221755140
+    second: CardFronts_Atlas_6
+  - first:
+      213: -9005946282723369261
+    second: CardFronts_Atlas_7
+  - first:
+      213: 1506634921727372606
+    second: CardFronts_Atlas_8
+  - first:
+      213: -4042687291330224918
+    second: CardFronts_Atlas_9
+  - first:
+      213: 4678874754114172494
+    second: CardFronts_Atlas_10
+  - first:
+      213: -5896492298426661822
+    second: CardFronts_Atlas_11
+  - first:
+      213: -8025293473092452773
+    second: CardFronts_Atlas_12
+  - first:
+      213: 3635083488204355323
+    second: CardFronts_Atlas_13
+  - first:
+      213: 3076670299742365179
+    second: CardFronts_Atlas_14
+  - first:
+      213: -3203575613202961151
+    second: CardFronts_Atlas_15
+  - first:
+      213: 5076742603812926227
+    second: CardFronts_Atlas_16
+  - first:
+      213: 1475446852091888192
+    second: CardFronts_Atlas_17
+  - first:
+      213: 5431687308545218980
+    second: CardFronts_Atlas_18
+  - first:
+      213: -3974043884044483792
+    second: CardFronts_Atlas_19
+  - first:
+      213: -5127922561484887715
+    second: CardFronts_Atlas_20
+  - first:
+      213: 1719736918691726575
+    second: CardFronts_Atlas_21
+  - first:
+      213: 7392529693892223459
+    second: CardFronts_Atlas_22
+  - first:
+      213: -6338553691985057046
+    second: CardFronts_Atlas_23
+  - first:
+      213: 1459848305699574221
+    second: CardFronts_Atlas_24
+  - first:
+      213: -5736329913675829539
+    second: CardFronts_Atlas_25
+  - first:
+      213: 5690556015215157698
+    second: CardFronts_Atlas_26
+  - first:
+      213: 7132715330767863646
+    second: CardFronts_Atlas_27
+  - first:
+      213: 1123109437445931052
+    second: CardFronts_Atlas_28
+  - first:
+      213: -4038730870876080245
+    second: CardFronts_Atlas_29
+  - first:
+      213: -6683619321801615324
+    second: CardFronts_Atlas_30
+  - first:
+      213: 6572742690439186769
+    second: CardFronts_Atlas_31
+  - first:
+      213: -7619127840633531962
+    second: CardFronts_Atlas_32
+  - first:
+      213: 8289530234896670885
+    second: CardFronts_Atlas_33
+  - first:
+      213: 6797198882025255472
+    second: CardFronts_Atlas_34
+  - first:
+      213: 1509024447587296521
+    second: CardFronts_Atlas_35
+  - first:
+      213: -2825506457811769551
+    second: CardFronts_Atlas_36
+  - first:
+      213: -2330835619127029204
+    second: CardFronts_Atlas_37
+  - first:
+      213: -4469868631961537869
+    second: CardFronts_Atlas_38
+  - first:
+      213: 6255104098795083998
+    second: CardFronts_Atlas_39
+  - first:
+      213: 8994078407266917392
+    second: CardFronts_Atlas_40
+  - first:
+      213: -1820154819854004524
+    second: CardFronts_Atlas_41
+  - first:
+      213: 1446817707182764464
+    second: CardFronts_Atlas_42
+  - first:
+      213: -6397052523369017175
+    second: CardFronts_Atlas_43
+  - first:
+      213: -5371180067059346302
+    second: CardFronts_Atlas_44
+  - first:
+      213: -9025668565510861413
+    second: CardFronts_Atlas_45
+  - first:
+      213: 7245367602385889136
+    second: CardFronts_Atlas_46
+  - first:
+      213: 8023972649392869277
+    second: CardFronts_Atlas_47
+  - first:
+      213: -2525976491426346000
+    second: CardFronts_Atlas_48
+  - first:
+      213: 4953023269609417711
+    second: CardFronts_Atlas_49
+  - first:
+      213: -3133929982243242370
+    second: CardFronts_Atlas_50
+  - first:
+      213: 8950418999549741524
+    second: CardFronts_Atlas_51
+  - first:
+      213: -7159723844593261497
+    second: CardFronts_Atlas_52
+  - first:
+      213: -8450466903713570550
+    second: CardFronts_Atlas_53
+  - first:
+      213: 5487575992818605835
+    second: CardFronts_Atlas_54
+  - first:
+      213: 7765618594796100638
+    second: CardFronts_Atlas_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CardFronts_Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1013
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3c9c4ebc9e0e400800000000000000
+      internalID: 351537832860959732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1013
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf47f5f9bd9ca2e0800000000000000
+      internalID: -2113140703122468928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1013
+        width: 108
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ea9a6e6259dabf0800000000000000
+      internalID: -311428804907520433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1013
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe797d803371aa790800000000000000
+      internalID: -7518171119982503953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_4
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1013
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468fe7a3c76d49e00800000000000000
+      internalID: 1050700442129856612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_5
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1013
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6c73f505ac39ce0800000000000000
+      internalID: -1399552612638406975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_6
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1013
+        width: 108
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf023c5d5784ae3d0800000000000000
+      internalID: -3176646916221755140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_7
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1013
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de16084293740380800000000000000
+      internalID: -9005946282723369261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 846
+        width: 107
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d22c39a74a8e410800000000000000
+      internalID: 1506634921727372606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_9
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 846
+        width: 107
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec964ed35d75e7c0800000000000000
+      internalID: -4042687291330224918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_10
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 846
+        width: 108
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46b4839cc3bee040800000000000000
+      internalID: 4678874754114172494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 846
+        width: 107
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244c37bde737b2ea0800000000000000
+      internalID: -5896492298426661822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_12
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 846
+        width: 107
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e30162b1e60a090800000000000000
+      internalID: -8025293473092452773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_13
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 846
+        width: 107
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6fe4b4c29627230800000000000000
+      internalID: 3635083488204355323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_14
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 846
+        width: 108
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf56323365782ba20800000000000000
+      internalID: 3076670299742365179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_15
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 846
+        width: 107
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10deeebf3fc9a83d0800000000000000
+      internalID: -3203575613202961151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 680
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3137c5c1086347640800000000000000
+      internalID: 5076742603812926227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_17
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 680
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042c7ef3817d97410800000000000000
+      internalID: 1475446852091888192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_18
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 680
+        width: 108
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9d5dc24da316b40800000000000000
+      internalID: 5431687308545218980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_19
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 680
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03307b1942c59d8c0800000000000000
+      internalID: -3974043884044483792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_20
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 680
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d596bf66995f5d8b0800000000000000
+      internalID: -5127922561484887715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_21
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 680
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4ceb1bd9bbdd710800000000000000
+      internalID: 1719736918691726575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_22
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 680
+        width: 108
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e129fbd69a879660800000000000000
+      internalID: 7392529693892223459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_23
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 680
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea6d7f000fe808a0800000000000000
+      internalID: -6338553691985057046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_24
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 514
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1dd27ac4c624410800000000000000
+      internalID: 1459848305699574221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_25
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 514
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddea7ecf5567460b0800000000000000
+      internalID: -5736329913675829539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_26
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 514
+        width: 108
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1ac55cb8ae8fe40800000000000000
+      internalID: 5690556015215157698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_27
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 514
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5fb6667dce7cf260800000000000000
+      internalID: 7132715330767863646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_28
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 514
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c208ad63516169f00800000000000000
+      internalID: 1123109437445931052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_29
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 514
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87f60acbab83f7c0800000000000000
+      internalID: -4038730870876080245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_30
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 514
+        width: 108
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428d31e53a30f33a0800000000000000
+      internalID: -6683619321801615324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_31
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 514
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1594caf27a2173b50800000000000000
+      internalID: 6572742690439186769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_32
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 348
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1dfb8c89b634690800000000000000
+      internalID: -7619127840633531962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_33
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 348
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a060ed24d35a0370800000000000000
+      internalID: 8289530234896670885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_34
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 348
+        width: 108
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0323ccebe50845e50800000000000000
+      internalID: 6797198882025255472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_35
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 348
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90522db6db121f410800000000000000
+      internalID: 1509024447587296521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_36
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 348
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137ae87c8d8c9c8d0800000000000000
+      internalID: -2825506457811769551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_37
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 348
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c221b1c8a5537afd0800000000000000
+      internalID: -2330835619127029204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_38
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 348
+        width: 108
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2754f5926d7f1c0800000000000000
+      internalID: -4469868631961537869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_39
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 348
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed855c179089ec650800000000000000
+      internalID: 6255104098795083998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_40
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 182
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cd723a8a261dc70800000000000000
+      internalID: 8994078407266917392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_41
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 182
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de036eb5d28db6e0800000000000000
+      internalID: -1820154819854004524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_42
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 182
+        width: 108
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1bf530a01241410800000000000000
+      internalID: 1446817707182764464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_43
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 182
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0d21f7f9a1937a0800000000000000
+      internalID: -6397052523369017175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_44
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 182
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284d44ecf2cb575b0800000000000000
+      internalID: -5371180067059346302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_45
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 182
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dc05c72426eb280800000000000000
+      internalID: -9025668565510861413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_46
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 182
+        width: 108
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077a55f5277bc8460800000000000000
+      internalID: 7245367602385889136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_47
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 182
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f038e9c90ea5f60800000000000000
+      internalID: 8023972649392869277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_48
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 15
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb8b85a3cde1fcd0800000000000000
+      internalID: -2525976491426346000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_49
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 15
+        width: 107
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb2055eb6cacb440800000000000000
+      internalID: 4953023269609417711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_50
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 15
+        width: 108
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ef171194b0284d0800000000000000
+      internalID: -3133929982243242370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_51
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 15
+        width: 107
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9c113a8a6463c70800000000000000
+      internalID: 8950418999549741524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_52
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 15
+        width: 107
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744ef11e81d83ac90800000000000000
+      internalID: -7159723844593261497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_53
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 15
+        width: 107
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0125f1af19e9ba80800000000000000
+      internalID: -8450466903713570550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_54
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 15
+        width: 108
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f1ae18a49c72c40800000000000000
+      internalID: 5487575992818605835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardFronts_Atlas_55
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 15
+        width: 107
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c5dfbc7f405cb60800000000000000
+      internalID: 7765618594796100638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
