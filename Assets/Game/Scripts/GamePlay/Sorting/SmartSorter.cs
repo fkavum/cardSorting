@@ -13,17 +13,27 @@ namespace CardSorting.GamePlay.Sorting
 
             SequentialSorter sequentialSorter = new SequentialSorter(cards);
             SameNumberSorter sameNumberSorter = new SameNumberSorter(cards);
-
-            foreach (var seqCardList in sequentialSorter.sortedCardListGroups)
+            if (sequentialSorter.sortedCardListGroups.Count > 0)
             {
-                sortedCardListGroups.AddRange(DeckHelper.GetAllCombos(seqCardList,3));
+                foreach (var seqCardList in sequentialSorter.sortedCardListGroups)
+                {
+                    sortedCardListGroups.AddRange(DeckHelper.GetAllCombos(seqCardList,3));
+                }
             }
 
-            foreach (var sameCardList in sameNumberSorter.sortedCardListGroups)
+            if (sameNumberSorter.sortedCardListGroups.Count > 0)
             {
-                sortedCardListGroups.AddRange(DeckHelper.GetAllCombos(sameCardList,3));
+                foreach (var sameCardList in sameNumberSorter.sortedCardListGroups)
+                {
+                    sortedCardListGroups.AddRange(DeckHelper.GetAllCombos(sameCardList,3));
+                }
             }
 
+            if (sortedCardListGroups.Count == 0)
+            {
+                unsortedGroups = cards;
+                return;
+            }
             List<List<List<Card>>> allCombos = DeckHelper.GetAllCombos(sortedCardListGroups);
             List<List<List<Card>>> cardGroups = GetOneDeckCardGroups(allCombos);
 
@@ -37,14 +47,14 @@ namespace CardSorting.GamePlay.Sorting
                 {
                     allCardsInTheCardGroup.AddRange(cardList);
                 }
-
-                List<Card> otherCards = DeckHelper.GetOtherCards(allCardsInTheCardGroup);
+                List<Card> otherCards = GetOtherCards(allCardsInTheCardGroup,cards);
                 int otherCardsPoint = DeckHelper.GetTotalCardPoint(otherCards);
 
                 if (otherCardsPoint < lowestOtherCardsPoint)
                 {
                     bestCombo = cardGroup;
                     bestUnsortedGroup = otherCards;
+                    lowestOtherCardsPoint = otherCardsPoint;
                 }
             }
             sortedCardListGroups = bestCombo;

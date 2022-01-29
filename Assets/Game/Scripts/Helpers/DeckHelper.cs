@@ -132,19 +132,7 @@ namespace CardSorting.Helpers
 
             return cardCount;
         }
-        public static List<Card> GetOtherCards(List<Card> givenCards)
-        {
-            List<Card> otherCards = givenCards;
-            for (int i = 1; i <= 52; i++)
-            {
-                if (givenCards.Find(x => x.DeckCardNumber == i) == null)
-                {
-                    otherCards.Add(new Card(i));
-                }
-            }
-
-            return otherCards;
-        }
+       
         public static int GetTotalCardPoint(List<Card> cards)
         {
             int totalPoint = 0;

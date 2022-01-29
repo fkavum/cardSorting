@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using CardSorting.Helpers;
 
 namespace CardSorting.GamePlay.Sorting
@@ -28,6 +29,33 @@ namespace CardSorting.GamePlay.Sorting
         public bool IsUnsortedCardListInTheSortedGroup(List<Card> cardList)
         {
             return DeckHelper.IsUnsortedCardListInTheCardGroup(cardList, sortedCardListGroups);
+        }
+
+        public List<Card> GetSortedList()
+        {
+            List<Card> sortedList = new List<Card>();
+
+            foreach (var sortedCardList in sortedCardListGroups)
+            {
+                sortedList.AddRange(sortedCardList);
+            }
+
+            sortedList.AddRange(unsortedGroups);
+
+            return sortedList;
+        }
+
+        public List<Card> GetOtherCards(List<Card> givenCards, List<Card> allCards)
+        {
+            return allCards.Where(x =>
+            {
+                if (givenCards.Find(y => y.DeckCardNumber == x.DeckCardNumber) == null)
+                {
+                    return true;
+                }
+
+                return false;
+            }).ToList();
         }
     }
 }

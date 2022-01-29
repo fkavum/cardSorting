@@ -22,7 +22,7 @@ namespace CardSorting.GamePlay
             {
                 for (int i = 1; i <= 13; i++)
                 {
-                    _cards[(i * cardTypeValue) - 1] = new Card(i, (Card.CardTypeEnum) cardTypeValue);
+                    _cards[(i + (13 * ((int) cardTypeValue -1))) - 1] = new Card(i, (Card.CardTypeEnum) cardTypeValue);
                 }
             }
         }

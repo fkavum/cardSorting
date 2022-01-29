@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using CardSorting.GamePlay;
 using CardSorting.Helpers;
 using CardSorting.Scriptable;
+using DG.Tweening;
 using UnityEngine;
 
 namespace CardSorting.UI.Gameplay
@@ -60,6 +61,30 @@ namespace CardSorting.UI.Gameplay
         public List<CardEntity> TakeCards(int count)
         {
             return cardEntities.Take(count).ToList();
+        }
+        
+        public void ReturnCards(List<CardEntity> returnedCardEntities)
+        {
+            Shuffle();
+
+            for (int i = 0; i < returnedCardEntities.Count; i++)
+            {
+                CardEntity returnedCardEntity = returnedCardEntities[i];
+                RectTransform cardEntityRect = returnedCardEntity.GetComponent<RectTransform>();
+               
+                
+                
+                cardEntityRect.SetParent(deckHolder);
+                cardEntityRect.DOLocalMove(deckCardPosition.anchoredPosition, 1).SetDelay(i * 0.1f);
+                cardEntityRect.DOLocalRotate(new Vector3(0, 85, 0), .5f).OnComplete(
+                    () =>
+                    {
+                        returnedCardEntity.backSide.SetActive(true);
+                        returnedCardEntity.frontSide.SetActive(false);
+                        cardEntityRect.DOLocalRotate(new Vector3(0, 0, 0), .5f);
+                    }
+                ).SetDelay(i * 0.1f);
+            }
         }
     }
 }

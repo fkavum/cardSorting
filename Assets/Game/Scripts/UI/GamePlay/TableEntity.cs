@@ -16,13 +16,42 @@ public class TableEntity : MonoBehaviour
       Debug.Log("Initializing Deck");
       deckEntity.Initialize();
       deckEntity.Shuffle();
-      
-      
-      List<CardEntity> cards = deckEntity.TakeCards(11);
-      cardEntityHolder.Initialize(cards);
-      
    }
 
-  
-   
+   private void ResetTable()
+   {
+      deckEntity.ReturnCards(cardEntityHolder.cardEntities);
+      cardEntityHolder.cardEntities = new List<CardEntity>();
+   }
+
+   private void Update()
+   {
+      if (Input.GetKeyDown(KeyCode.Alpha1))
+      {
+         List<CardEntity> cards = deckEntity.TakeCards(11);
+         cardEntityHolder.Initialize(cards);
+      }
+      
+      if (Input.GetKeyDown(KeyCode.Alpha2))
+      {
+         cardEntityHolder.SortSequentially();
+      }
+      
+      if (Input.GetKeyDown(KeyCode.Alpha3))
+      {
+         cardEntityHolder.SortSameNumber();
+      }
+      
+      if (Input.GetKeyDown(KeyCode.Alpha4))
+      {
+         cardEntityHolder.SortSmart();
+      }
+      
+      if (Input.GetKeyDown(KeyCode.R))
+      {
+         ResetTable();
+      }
+      
+      
+   }
 }
