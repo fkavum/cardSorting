@@ -37,6 +37,25 @@ namespace CardSorting.GamePlay
             
             _cardType = (CardTypeEnum)(((_deckCardNumber - _cardNumber) / 13) +1);
         }
+        
+        public static bool operator ==(Card lhs, Card rhs)
+        {
+            if (lhs is null)
+            {
+                if (rhs is null)
+                {
+                    // null == null = true.
+                    return true;
+                }
+
+                // Only the left side is null.
+                return false;
+            }
+            // Equals handles the case of null on right side.
+            return rhs != null && lhs.DeckCardNumber == rhs.DeckCardNumber;
+        }
+
+        public static bool operator !=(Card lhs, Card rhs) => !(lhs == rhs);
  
         public enum CardTypeEnum
         {

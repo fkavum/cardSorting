@@ -1,16 +1,16 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace CardSorting.GamePlay.Sorting
 {
-    public class SequentialSorter:Sorter
+    public class SameNumberSorter:Sorter
     {
-        public SequentialSorter(List<Card> cards)
+        public SameNumberSorter(List<Card> cards)
         {
             sortedCardListGroups = new List<List<Card>>();
             unsortedGroups = new List<Card>();
 
-            cards = cards.OrderBy((x) => x.DeckCardNumber).ToList();
+            cards = cards.OrderBy((x) => x.CardNumber).ToList();
 
 
             List<Card> sortedCardList = new List<Card>();
@@ -23,7 +23,7 @@ namespace CardSorting.GamePlay.Sorting
                     continue;
                 }
 
-                if (sortedCardList[sortedCardListCount - 1].CardNumber + 1 == cards[i].CardNumber)
+                if (sortedCardList[sortedCardListCount - 1].CardNumber == cards[i].CardNumber)
                 {
                     sortedCardList.Add(cards[i]);
                 }
