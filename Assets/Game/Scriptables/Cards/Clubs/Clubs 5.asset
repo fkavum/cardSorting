@@ -15,3 +15,4 @@ MonoBehaviour:
   cardNumber: 5
   cardType: 4
   cardSprite: {fileID: 1475446852091888192, guid: c6105042799944344a27575fc9a1ab9d, type: 3}
+  deckNumber: 44

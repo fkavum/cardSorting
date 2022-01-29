@@ -14,7 +14,7 @@ namespace CardSorting.GamePlay
     public class Deck
     {
         private Card[] _cards;
-
+        public Card[] Cards => _cards;
         public Deck()
         {
             _cards = new Card[52];
@@ -46,7 +46,17 @@ namespace CardSorting.GamePlay
             return _cards.Take(cardCount).ToList();
         }
 
-    
+        public void ReturnCards(Card[] cards)
+        {
+           _cards = _cards.Concat(cards).ToArray();
+        }
+        
+        public void ReturnCard(Card card)
+        {
+            _cards = _cards.Append(card).ToArray();
+        }
+        
+        
 
     }
 }
