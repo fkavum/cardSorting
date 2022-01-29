@@ -9,10 +9,13 @@ using CardSorting.Helpers;
 
 public class ListHelperTest
 {
+    /// <summary>
+    /// Tests ListHelper.GetAllCombos function. 
+    /// </summary>
     [Test]
     public void ListCombinationTest()
     {
-        List<List<Card>> result = ListHelper.GetAllCombos(new List<Card>()
+        List<List<Card>> result = DeckHelper.GetAllCombos(new List<Card>()
         {
             new Card(1),
             new Card(2),
@@ -21,7 +24,7 @@ public class ListHelperTest
             new Card(5),
         },3);
         
-        Assert.AreEqual(true, ListHelper.IsUnsortedCardListInTheCardGroup(new List<Card>()
+        Assert.AreEqual(true, DeckHelper.IsUnsortedCardListInTheCardGroup(new List<Card>()
         {
             new Card(2),
             new Card(5),

@@ -10,13 +10,7 @@ namespace CardSorting.GamePlay.Sorting
 
         public int GetUnsortedGroupPoint()
         {
-            int totalPoint = 0;
-            foreach (var unsortedCard in unsortedGroups)
-            {
-                totalPoint += unsortedCard.CardNumber;
-            }
-
-            return totalPoint;
+            return DeckHelper.GetTotalCardPoint(unsortedGroups);
         }
 
         public bool IsCardInTheUnsortedSortedGroup(Card cardToSearch)
@@ -28,12 +22,12 @@ namespace CardSorting.GamePlay.Sorting
 
         public bool IsSortedCardListInTheSortedGroup(List<Card> cardList)
         {
-            return ListHelper.IsSortedCardListInTheCardGroup(cardList, sortedCardListGroups);
+            return DeckHelper.IsSortedCardListInTheCardGroup(cardList, sortedCardListGroups);
         }
 
         public bool IsUnsortedCardListInTheSortedGroup(List<Card> cardList)
         {
-            return ListHelper.IsUnsortedCardListInTheCardGroup(cardList, sortedCardListGroups);
+            return DeckHelper.IsUnsortedCardListInTheCardGroup(cardList, sortedCardListGroups);
         }
     }
 }
