@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CardSorting.Helpers;
 
 namespace CardSorting.GamePlay.Sorting
 {
@@ -6,7 +7,7 @@ namespace CardSorting.GamePlay.Sorting
     {
         public List<List<Card>> sortedCardListGroups;
         public List<Card> unsortedGroups;
-        
+
         public int GetUnsortedGroupPoint()
         {
             int totalPoint = 0;
@@ -18,68 +19,21 @@ namespace CardSorting.GamePlay.Sorting
             return totalPoint;
         }
 
-       
-
         public bool IsCardInTheUnsortedSortedGroup(Card cardToSearch)
         {
             if (unsortedGroups.Find(x => x == cardToSearch) == null)
                 return false;
             return true;
         }
-        
+
         public bool IsSortedCardListInTheSortedGroup(List<Card> cardList)
         {
-            foreach (var sortedCardList in sortedCardListGroups)
-            {
-                if (IsTwoSortedCardListEqual(cardList, sortedCardList))
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            return ListHelper.IsSortedCardListInTheCardGroup(cardList, sortedCardListGroups);
         }
-        
+
         public bool IsUnsortedCardListInTheSortedGroup(List<Card> cardList)
         {
-            foreach (var sortedCardList in sortedCardListGroups)
-            {
-                if (IsTwoUnsortedCardListEqual(cardList, sortedCardList))
-                {
-                    return true;
-                }
-            }
-        
-            return false;
-        }
-
-        bool IsTwoSortedCardListEqual(List<Card> lCards, List<Card> rCards)
-        {
-            if (lCards.Count != rCards.Count) return false;
-            int cardsCount = lCards.Count;
-            for (int i = 0; i < cardsCount; i++)
-            {
-                if (lCards[i] != rCards[i]) return false;
-            }
-
-            return true;
-        }
-        
-        bool IsTwoUnsortedCardListEqual(List<Card> lCards, List<Card> rCards)
-        {
-            if (lCards.Count != rCards.Count) return false;
-            int cardsCount = lCards.Count;
-            int matchedCardCount = 0;
-            for (int i = 0; i < cardsCount; i++)
-            {
-                if (lCards[i] != rCards[i]) matchedCardCount ++;
-            }
-
-            if (matchedCardCount == cardsCount)
-            {
-                return true;
-            }
-            return true;
+            return ListHelper.IsUnsortedCardListInTheCardGroup(cardList, sortedCardListGroups);
         }
     }
 }
