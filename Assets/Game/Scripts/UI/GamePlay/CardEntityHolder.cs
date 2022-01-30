@@ -43,19 +43,19 @@ public class CardEntityHolder : MonoBehaviour
             cardEntityRect.DOLocalMove(newPos, 1).SetDelay(i * 0.1f).OnKill(
                 () => { cardEntityRect.anchoredPosition = newPos; }
             );
-            cardEntityRect.DOLocalRotate(new Vector3(0, 85, 0), .5f).OnComplete(
+            cardEntityRect.DOLocalRotate(new Vector3(0, 85, 0), .39f).OnComplete(
                 () =>
                 {
                     cardEntity.backSide.SetActive(false);
                     cardEntity.frontSide.SetActive(true);
-                    cardEntityRect.DOLocalRotate(new Vector3(0, 0, angle), .5f);
+                    cardEntityRect.DOLocalRotate(new Vector3(0, 0, angle), .39f).SetEase(Ease.Linear);
                 }
             ).SetDelay(i * 0.1f).OnKill(() =>
             {
                 cardEntity.backSide.SetActive(false);
                 cardEntity.frontSide.SetActive(true);
                 cardEntityRect.localRotation = Quaternion.Euler(new Vector3(0, 0, angle));
-            });
+            }).SetEase(Ease.Linear);
         }
     }
 
@@ -105,7 +105,7 @@ public class CardEntityHolder : MonoBehaviour
         Animate();
     }
 
-    void Animate(float duration = 1f)
+    void Animate(float duration = .5f)
     {
         int cardEntitiesCount = cardEntities.Count;
         for (int i = 0; i < cardEntitiesCount; i++)

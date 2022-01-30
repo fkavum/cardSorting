@@ -102,14 +102,14 @@ namespace CardSorting.UI.Gameplay
 
                 cardEntityRect.SetParent(deckHolder);
                 cardEntityRect.DOLocalMove(deckCardPosition.anchoredPosition, 1).SetDelay(i * 0.1f);
-                cardEntityRect.DOLocalRotate(new Vector3(0, 85, 0), .5f).OnComplete(
+                cardEntityRect.DOLocalRotate(new Vector3(0, 85, 0), .35f).OnComplete(
                     () =>
                     {
                         returnedCardEntity.backSide.SetActive(true);
                         returnedCardEntity.frontSide.SetActive(false);
-                        cardEntityRect.DOLocalRotate(new Vector3(0, 0, 0), .5f);
+                        cardEntityRect.DOLocalRotate(new Vector3(0, 0, 0), .35f).SetEase(Ease.Linear);
                     }
-                ).SetDelay(i * 0.1f);
+                ).SetDelay(i * 0.1f).SetEase(Ease.Linear);
             }
         }
     }
