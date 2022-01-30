@@ -70,6 +70,7 @@ namespace CardSorting.UI.Gameplay
             for (int i = 0; i < returnedCardEntities.Count; i++)
             {
                 CardEntity returnedCardEntity = returnedCardEntities[i];
+                returnedCardEntity.holder = null;
                 RectTransform cardEntityRect = returnedCardEntity.GetComponent<RectTransform>();
                
                 

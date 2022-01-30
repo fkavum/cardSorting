@@ -931,6 +931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1317413553}
   - component: {fileID: 1317413554}
+  - component: {fileID: 1317413555}
   m_Layer: 5
   m_Name: CardHolder
   m_TagString: Untagged
@@ -973,8 +974,21 @@ MonoBehaviour:
   startPoint: {fileID: 836133680}
   endPoint: {fileID: 1666609165}
   controlPoint: {fileID: 280572200}
+  _pickedCard: {fileID: 0}
   cardEntities: []
   tableEntity: {fileID: 0}
+--- !u!225 &1317413555
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317413552}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1353250543
 GameObject:
   m_ObjectHideFlags: 0
