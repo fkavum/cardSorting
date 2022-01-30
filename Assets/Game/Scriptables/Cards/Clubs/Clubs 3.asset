@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9858b7085a7de41b2e28c7d2600d3f, type: 3}
+  m_Name: Clubs 3
+  m_EditorClassIdentifier: 
+  cardNumber: 3
+  cardType: 4
+  cardSprite: {fileID: 6572742690439186769, guid: c6105042799944344a27575fc9a1ab9d, type: 3}
