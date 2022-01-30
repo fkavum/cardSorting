@@ -59,6 +59,8 @@ public class CardEntityHolder : MonoBehaviour
 
     public void SortSequentially()
     {
+        if(cardEntities.Count == 0) return;
+        
         List<Card> cards = cardEntities.ConvertAll(x => x.card);
         SequentialSorter sequentialSorter = new SequentialSorter(cards);
         cards = sequentialSorter.GetSortedList();
@@ -73,9 +75,10 @@ public class CardEntityHolder : MonoBehaviour
 
     public void SortSameNumber()
     {
+        if(cardEntities.Count == 0) return;
         List<Card> cards = cardEntities.ConvertAll(x => x.card);
-        SameNumberSorter sequentialSorter = new SameNumberSorter(cards);
-        cards = sequentialSorter.GetSortedList();
+        SameNumberSorter sameNumberSorter = new SameNumberSorter(cards);
+        cards = sameNumberSorter.GetSortedList();
         cardEntities = cards.ConvertAll(x =>
         {
             var entity = cardEntities.Find(y => y.cardConfig.deckNumber == x.DeckCardNumber);
@@ -87,9 +90,10 @@ public class CardEntityHolder : MonoBehaviour
 
     public void SortSmart()
     {
+        if(cardEntities.Count == 0) return;
         List<Card> cards = cardEntities.ConvertAll(x => x.card);
-        SmartSorter sequentialSorter = new SmartSorter(cards);
-        cards = sequentialSorter.GetSortedList();
+        SmartSorter smartSorter = new SmartSorter(cards);
+        cards = smartSorter.GetSortedList();
         cardEntities = cards.ConvertAll(x =>
         {
             var entity = cardEntities.Find(y => y.cardConfig.deckNumber == x.DeckCardNumber);

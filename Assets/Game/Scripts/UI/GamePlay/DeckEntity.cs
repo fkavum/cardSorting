@@ -20,7 +20,7 @@ namespace CardSorting.UI.Gameplay
 
 
         public List<CardEntity> cardEntities;
-
+        public int _themeIndex = 0;
         public void Initialize()
         {
             Deck deck = new Deck();
@@ -32,7 +32,7 @@ namespace CardSorting.UI.Gameplay
                 newCardEntityRect.anchoredPosition = deckCardPosition.anchoredPosition;
                 newCardEntity.backSide.SetActive(true);
                 newCardEntity.frontSide.SetActive(false);
-                newCardEntity.backImage.sprite = deckConfig.cardBackImage;
+                newCardEntity.backImage.sprite = deckConfig.cardBackImages[_themeIndex];
                 var cardConfig = deckConfig.cardConfigs.Find(x => i == x.deckNumber);
 
                 if (cardConfig == null)
@@ -44,6 +44,22 @@ namespace CardSorting.UI.Gameplay
                 newCardEntity.cardConfig = cardConfig;
                 newCardEntity.card = deck.Cards[i - 1];
                 cardEntities.Add(newCardEntity);
+            }
+        }
+
+        public void ChangeTheme()
+        {
+            int newIndex = _themeIndex + 1;
+            if (newIndex >= deckConfig.cardBackImages.Length)
+            {
+                newIndex = 0;
+            }
+
+            _themeIndex = newIndex;
+
+            foreach (var card in cardEntities)
+            {
+                card.backImage.sprite = deckConfig.cardBackImages[newIndex];
             }
         }
 

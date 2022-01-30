@@ -431,7 +431,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 28746660}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 688188651}
+        m_TargetAssemblyTypeName: TableEntity, Scripts
+        m_MethodName: SortSmart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &28746660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,7 +1428,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 644586327}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 688188651}
+        m_TargetAssemblyTypeName: TableEntity, Scripts
+        m_MethodName: SortSameNumber
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &644586327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2705,7 +2729,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1276585484}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 688188651}
+        m_TargetAssemblyTypeName: TableEntity, Scripts
+        m_MethodName: ShufflePreset2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1276585484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2980,7 +3016,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 661, y: 700}
+  m_AnchoredPosition: {x: 572, y: 569}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &1370437101
@@ -3574,7 +3610,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1660838671}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 688188651}
+        m_TargetAssemblyTypeName: TableEntity, Scripts
+        m_MethodName: ChangeTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1660838671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3731,7 +3779,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1679995267}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 688188651}
+        m_TargetAssemblyTypeName: TableEntity, Scripts
+        m_MethodName: ShuffleCards
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1679995267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3827,7 +3887,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2525976491426346000, guid: c6105042799944344a27575fc9a1ab9d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2e1124a620d5de42bc197092fd1efb4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4033,6 +4093,7 @@ MonoBehaviour:
   deckCardPosition: {fileID: 1353250544}
   cardTemplatePrefab: {fileID: 1465105846}
   cardEntities: []
+  _themeIndex: 0
 --- !u!1 &1755180652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4116,7 +4177,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1755180655}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 688188651}
+        m_TargetAssemblyTypeName: TableEntity, Scripts
+        m_MethodName: SortSequentially
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1755180655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4356,7 +4429,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1992955822}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 688188651}
+        m_TargetAssemblyTypeName: TableEntity, Scripts
+        m_MethodName: ShufflePreset1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1992955822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4478,7 +4563,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1995501641}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 688188651}
+        m_TargetAssemblyTypeName: TableEntity, Scripts
+        m_MethodName: ResetTable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1995501641
 MonoBehaviour:
   m_ObjectHideFlags: 0

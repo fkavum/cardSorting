@@ -65,4 +65,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 26e04ef8b2014b84591f75cc10cae8e7, type: 2}
   - {fileID: 11400000, guid: 2e04b75387253f9458f861265034aa4b, type: 2}
   - {fileID: 11400000, guid: 4ad6032ab2aaed34e8a6e17d5243a9fd, type: 2}
-  cardBackImage: {fileID: 21300000, guid: b2e1124a620d5de42bc197092fd1efb4, type: 3}
+  cardBackImages:
+  - {fileID: 21300000, guid: b2e1124a620d5de42bc197092fd1efb4, type: 3}
+  - {fileID: 21300000, guid: 94dfa309e5d876c42bc3d1dd65eff507, type: 3}
+  - {fileID: -8211040115771392269, guid: bf2aef718b1c6d249b2eee137060977f, type: 3}
+  - {fileID: 21300000, guid: 9fe93e658c83a2944ab4d0ce361af6d3, type: 3}

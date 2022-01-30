@@ -8,7 +8,7 @@ namespace CardSorting.Scriptable
     public class DeckConfig : ScriptableObject
     {
         public List<CardConfig> cardConfigs;
-        public Sprite cardBackImage;
+        public Sprite[] cardBackImages;
         
     }
 }
