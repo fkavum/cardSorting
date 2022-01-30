@@ -105,22 +105,25 @@ public class CardEntityHolder : MonoBehaviour
         Animate();
     }
 
-    void Animate(float duration = .5f)
+    void Animate(float duration = .5f, int pickedCardIndex = -1)
     {
         int cardEntitiesCount = cardEntities.Count;
         for (int i = 0; i < cardEntitiesCount; i++)
         {
             CardEntity cardEntity = cardEntities[i];
             RectTransform cardEntityRect = cardEntity.GetComponent<RectTransform>();
-            Vector2 newPos = _bezier.Solve(i / (float) (cardEntitiesCount - 1));
             float angle = _bezier.SolveTangent(i / (float) (cardEntitiesCount - 1));
 
             cardEntityRect.SetSiblingIndex(i);
             cardEntityRect.DOKill();
-            cardEntityRect.DOLocalMove(newPos, duration).OnKill(() =>
+            if (pickedCardIndex != i)
             {
-                cardEntityRect.anchoredPosition = newPos;
-            });
+                Vector2 newPos = _bezier.Solve(i / (float) (cardEntitiesCount - 1));
+                cardEntityRect.DOLocalMove(newPos, duration).OnKill(() =>
+                {
+                    cardEntityRect.anchoredPosition = newPos;
+                });
+            }
             cardEntityRect.DOLocalRotate(new Vector3(0, 0, angle), duration).OnKill(() =>
             {
                 cardEntityRect.localRotation = Quaternion.Euler(new Vector3(0,0,angle));
@@ -151,7 +154,7 @@ public class CardEntityHolder : MonoBehaviour
         cardEntities.Remove(_pickedCard);
         int hoverOverIndex = cardEntities.FindIndex(x => x == entity);
         cardEntities.Insert(hoverOverIndex + 1 , _pickedCard);
-        FixPlacement();
+        Animate(0.15f, hoverOverIndex + 1);
     }
 
     public void PutOver(CardEntity entity)
