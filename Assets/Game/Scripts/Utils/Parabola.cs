@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace CardSorting.Utils
 {
+    /// <summary>
+    /// I moved on for Cubic Bezier solution.
+    /// This is still here, since i'm curios. I'll try to run it with this function too. Sorry for the mess...
+    /// </summary>
     public class Parabola
     {
        public static Vector3 SampleParabola ( Vector3 start, Vector3 end, float height, float t ) {

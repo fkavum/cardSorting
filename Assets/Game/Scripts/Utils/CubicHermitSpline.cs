@@ -5,6 +5,10 @@ using UnityEngine;
 
 namespace CardSorting.Utils
 {
+    /// <summary>
+    /// Its not working well for card placement case. I moved on for Cubic Bezier solution.
+    /// This is still here, since i'm curios. I'll try to make it work in the future.
+    /// </summary>
     public class CubicHermitSpline
     {
         public Vector2 start;

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using CardSorting.Helpers;
 
 namespace CardSorting.GamePlay.Sorting

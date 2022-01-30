@@ -2,6 +2,9 @@
 
 namespace CardSorting.Utils
 {
+    /// <summary>
+    /// Simple spline class for giving an arc shape for cards in the hand.
+    /// </summary>
     public class CubicBezier
     {
         public Vector2 start;

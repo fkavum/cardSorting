@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using CardSorting.GamePlay;
 using UnityEngine;
 
 namespace CardSorting.Scriptable

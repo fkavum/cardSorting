@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using CardSorting.GamePlay;
 using CardSorting.UI.Gameplay;
-using DG.Tweening;
 using UnityEngine;
 
 public class TableEntity : MonoBehaviour
