@@ -37,8 +37,9 @@ namespace CardSorting.UI.Gameplay
 
                 if (cardConfig == null)
                 {
-                    Debug.LogWarning($"Card config not found! deckNumber: {i}");                    
+                    Debug.LogWarning($"Card config not found! deckNumber: {i}");
                 }
+
                 newCardEntity.frontImage.sprite = cardConfig.cardSprite;
                 newCardEntity.cardConfig = cardConfig;
                 newCardEntity.card = deck.Cards[i - 1];
@@ -51,7 +52,7 @@ namespace CardSorting.UI.Gameplay
             System.Random rng = new System.Random(UnityEngine.Random.Range(0, 999999));
             rng.Shuffle(cardEntities);
         }
-        
+
         public void Shuffle(int seed)
         {
             System.Random rng = new System.Random(seed);
@@ -62,7 +63,19 @@ namespace CardSorting.UI.Gameplay
         {
             return cardEntities.Take(count).ToList();
         }
-        
+
+        public List<CardEntity> TakePrecalculatedCards(List<int> deckNumberList)
+        {
+            List<CardEntity> returnedCardEntities = new List<CardEntity>();
+
+            for (int i = 0; i < deckNumberList.Count; i++)
+            {
+                returnedCardEntities.Add(cardEntities.Find(x => x.cardConfig.deckNumber == deckNumberList[i]));
+            }
+
+            return returnedCardEntities;
+        }
+
         public void ReturnCards(List<CardEntity> returnedCardEntities)
         {
             Shuffle();
@@ -72,9 +85,8 @@ namespace CardSorting.UI.Gameplay
                 CardEntity returnedCardEntity = returnedCardEntities[i];
                 returnedCardEntity.holder = null;
                 RectTransform cardEntityRect = returnedCardEntity.GetComponent<RectTransform>();
-               
-                
-                
+
+
                 cardEntityRect.SetParent(deckHolder);
                 cardEntityRect.DOLocalMove(deckCardPosition.anchoredPosition, 1).SetDelay(i * 0.1f);
                 cardEntityRect.DOLocalRotate(new Vector3(0, 85, 0), .5f).OnComplete(

@@ -28,6 +28,7 @@ public class TableEntity : MonoBehaviour
    {
       if (Input.GetKeyDown(KeyCode.Alpha1))
       {
+         ResetTable();
          List<CardEntity> cards = deckEntity.TakeCards(11);
          cardEntityHolder.Initialize(cards);
       }
@@ -45,6 +46,26 @@ public class TableEntity : MonoBehaviour
       if (Input.GetKeyDown(KeyCode.Alpha4))
       {
          cardEntityHolder.SortSmart();
+      }
+
+      if (Input.GetKeyDown(KeyCode.Alpha5))
+      {
+         ResetTable();
+         List<CardEntity> cards = deckEntity.TakePrecalculatedCards(new List<int>()
+         {
+            27,
+            2,
+            18,
+            30,
+            1,
+            16,
+            43,
+            4,
+            14,
+            3,
+            17
+         });
+         cardEntityHolder.Initialize(cards);
       }
       
       if (Input.GetKeyDown(KeyCode.R))
