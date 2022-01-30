@@ -99,7 +99,7 @@ public class CardEntityHolder : MonoBehaviour
         Animate();
     }
 
-    void Animate()
+    void Animate(float duration = 1f)
     {
         int cardEntitiesCount = cardEntities.Count;
         for (int i = 0; i < cardEntitiesCount; i++)
@@ -111,11 +111,11 @@ public class CardEntityHolder : MonoBehaviour
 
             cardEntityRect.SetSiblingIndex(i);
             cardEntityRect.DOKill();
-            cardEntityRect.DOLocalMove(newPos, 1).OnKill(() =>
+            cardEntityRect.DOLocalMove(newPos, duration).OnKill(() =>
             {
                 cardEntityRect.anchoredPosition = newPos;
             });
-            cardEntityRect.DOLocalRotate(new Vector3(0, 0, angle), 1).OnKill(() =>
+            cardEntityRect.DOLocalRotate(new Vector3(0, 0, angle), duration).OnKill(() =>
             {
                 cardEntityRect.localRotation = Quaternion.Euler(new Vector3(0,0,angle));
             });
@@ -124,7 +124,7 @@ public class CardEntityHolder : MonoBehaviour
 
     public void FixPlacement()
     {
-        Animate();
+        Animate(0.1f);
     }
 
     public void PickCard(CardEntity entity)

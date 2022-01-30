@@ -40,8 +40,15 @@ namespace CardSorting.GamePlay.Sorting
                     sortedCardList.Add(cards[i]);
                 }
             }
+            if (sortedCardList.Count >= 3)
+            {
+                sortedCardListGroups.Add(sortedCardList);
+            }
+            else
+            {
+                unsortedGroups.AddRange(sortedCardList); //if there is something left in the array we should put it too.
+            }
 
-            unsortedGroups.AddRange(sortedCardList); //if there is something left in the array we should put it too.
         }
     }
 }

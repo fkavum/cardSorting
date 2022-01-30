@@ -4,7 +4,7 @@ using CardSorting.Helpers;
 
 namespace CardSorting.GamePlay.Sorting
 {
-    public class SmartSorter:Sorter
+    public class SmartSorter : Sorter
     {
         public SmartSorter(List<Card> cards)
         {
@@ -17,7 +17,7 @@ namespace CardSorting.GamePlay.Sorting
             {
                 foreach (var seqCardList in sequentialSorter.sortedCardListGroups)
                 {
-                    sortedCardListGroups.AddRange(DeckHelper.GetAllCombos(seqCardList,3));
+                    sortedCardListGroups.AddRange(DeckHelper.GetAllCombos(seqCardList, 3));
                 }
             }
 
@@ -25,7 +25,7 @@ namespace CardSorting.GamePlay.Sorting
             {
                 foreach (var sameCardList in sameNumberSorter.sortedCardListGroups)
                 {
-                    sortedCardListGroups.AddRange(DeckHelper.GetAllCombos(sameCardList,3));
+                    sortedCardListGroups.AddRange(DeckHelper.GetAllCombos(sameCardList, 3));
                 }
             }
 
@@ -34,6 +34,7 @@ namespace CardSorting.GamePlay.Sorting
                 unsortedGroups = cards;
                 return;
             }
+
             List<List<List<Card>>> allCombos = DeckHelper.GetAllCombos(sortedCardListGroups);
             List<List<List<Card>>> cardGroups = GetOneDeckCardGroups(allCombos);
 
@@ -47,7 +48,8 @@ namespace CardSorting.GamePlay.Sorting
                 {
                     allCardsInTheCardGroup.AddRange(cardList);
                 }
-                List<Card> otherCards = GetOtherCards(allCardsInTheCardGroup,cards);
+
+                List<Card> otherCards = GetOtherCards(allCardsInTheCardGroup, cards);
                 int otherCardsPoint = DeckHelper.GetTotalCardPoint(otherCards);
 
                 if (otherCardsPoint < lowestOtherCardsPoint)
@@ -57,17 +59,26 @@ namespace CardSorting.GamePlay.Sorting
                     lowestOtherCardsPoint = otherCardsPoint;
                 }
             }
+
             sortedCardListGroups = bestCombo;
             unsortedGroups = bestUnsortedGroup;
+
+            //This just for visual. Get all combos function makes groups reversed. So sequential distribution became int desc. order
+            foreach (var sortedCardListGroup in sortedCardListGroups)
+            {
+                sortedCardListGroup.Reverse();
+            }
+
+            sortedCardListGroups.Reverse();
         }
-        
+
         public List<List<List<Card>>> GetOneDeckCardGroups(List<List<List<Card>>> cardGroups)
         {
             List<List<List<Card>>> oneDeckCardGroups = new List<List<List<Card>>>();
 
             foreach (List<List<Card>> cardGroup in cardGroups)
             {
-                if(DeckHelper.IsOneDeckCardGroup(cardGroup))
+                if (DeckHelper.IsOneDeckCardGroup(cardGroup))
                 {
                     oneDeckCardGroups.Add(cardGroup);
                 }

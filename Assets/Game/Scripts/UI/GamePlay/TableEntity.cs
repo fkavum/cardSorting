@@ -67,6 +67,25 @@ public class TableEntity : MonoBehaviour
          });
          cardEntityHolder.Initialize(cards);
       }
+      if (Input.GetKeyDown(KeyCode.Alpha6))
+      {
+         ResetTable();
+         List<CardEntity> cards = deckEntity.TakePrecalculatedCards(new List<int>()
+         {
+            45,
+            32,
+            44,
+            17,
+            5,
+            6,
+            18,
+            30,
+            31,
+            4,
+            16,
+         });
+         cardEntityHolder.Initialize(cards);
+      }
       
       if (Input.GetKeyDown(KeyCode.R))
       {
