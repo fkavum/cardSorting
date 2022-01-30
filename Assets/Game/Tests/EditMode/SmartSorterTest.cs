@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.TestTools;
 using CardSorting.GamePlay;
 using CardSorting.GamePlay.Sorting;
 
@@ -28,6 +25,8 @@ public class SmartSorterTest
 
         Assert.AreEqual(true,smartSorter.IsCardInTheUnsortedSortedGroup(new Card(1,Card.CardTypeEnum.Diamonds)));
         Assert.AreEqual(true,smartSorter.IsCardInTheUnsortedSortedGroup(new Card(1,Card.CardTypeEnum.Hearts)));
+        Assert.AreEqual(false,smartSorter.IsCardInTheUnsortedSortedGroup(new Card(9,Card.CardTypeEnum.Hearts)));
+        Assert.AreEqual(false,smartSorter.IsCardInTheUnsortedSortedGroup(new Card(10,Card.CardTypeEnum.Diamonds)));
         
         Assert.AreEqual(true,smartSorter.IsUnsortedCardListInTheSortedGroup(new List<Card>()
         {
@@ -42,6 +41,15 @@ public class SmartSorterTest
             new Card(4,Card.CardTypeEnum.Spades),
             new Card(4,Card.CardTypeEnum.Clubs),
         }));
+        
+        Assert.AreEqual(false,smartSorter.IsUnsortedCardListInTheSortedGroup(new List<Card>()
+        {
+            new Card(4,Card.CardTypeEnum.Hearts),
+            new Card(4,Card.CardTypeEnum.Spades),
+            new Card(4,Card.CardTypeEnum.Clubs),
+            new Card(3,Card.CardTypeEnum.Diamonds),
+        }));
+
         
         Assert.AreEqual(true,smartSorter.IsUnsortedCardListInTheSortedGroup(new List<Card>()
         {

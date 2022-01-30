@@ -90,7 +90,10 @@ namespace CardSorting.Helpers
             int matchedCardCount = 0;
             for (int i = 0; i < cardsCount; i++)
             {
-                if (lList[i] != rList[i]) matchedCardCount++;
+                for (int j = 0; j < cardsCount; j++)
+                {
+                    if (lList[i] == rList[j]) matchedCardCount++;
+                }
             }
 
             if (matchedCardCount == cardsCount)
@@ -98,7 +101,7 @@ namespace CardSorting.Helpers
                 return true;
             }
 
-            return true;
+            return false;
         }
 
 

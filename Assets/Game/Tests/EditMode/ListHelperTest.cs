@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.TestTools;
 using CardSorting.GamePlay;
 using CardSorting.Helpers;
 
@@ -30,6 +27,14 @@ public class ListHelperTest
             new Card(5),
             new Card(3)
         }, result));
+        
+        Assert.AreEqual(false, DeckHelper.IsUnsortedCardListInTheCardGroup(new List<Card>()
+        {
+            new Card(2),
+            new Card(5),
+            new Card(10)
+        }, result));
+
         
     }
 }

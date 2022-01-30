@@ -1,8 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.TestTools;
 using CardSorting.GamePlay;
 using CardSorting.GamePlay.Sorting;
 
@@ -30,6 +27,8 @@ public class SequentialSorterTest
         Assert.AreEqual(true,sequentialSorter.IsCardInTheUnsortedSortedGroup(new Card(1,Card.CardTypeEnum.Hearts)));
         Assert.AreEqual(true,sequentialSorter.IsCardInTheUnsortedSortedGroup(new Card(4,Card.CardTypeEnum.Hearts)));
         Assert.AreEqual(true,sequentialSorter.IsCardInTheUnsortedSortedGroup(new Card(4,Card.CardTypeEnum.Clubs)));
+        Assert.AreEqual(false,sequentialSorter.IsCardInTheUnsortedSortedGroup(new Card(9,Card.CardTypeEnum.Clubs)));
+        Assert.AreEqual(false,sequentialSorter.IsCardInTheUnsortedSortedGroup(new Card(10,Card.CardTypeEnum.Clubs)));
         
         
         Assert.AreEqual(true,sequentialSorter.IsSortedCardListInTheSortedGroup(new List<Card>()
