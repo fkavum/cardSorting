@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using CardSorting.GamePlay;
 using CardSorting.GamePlay.Sorting;
 using CardSorting.UI.Gameplay;
@@ -8,6 +6,10 @@ using CardSorting.Utils;
 using UnityEngine;
 using DG.Tweening;
 
+/// <summary>
+/// This is a card holder class.
+/// Its responsible for all of the card operations in the hand. Like, card placement, sorting, etc.
+/// </summary>
 public class CardEntityHolder : MonoBehaviour
 {
     public RectTransform startPoint;
@@ -138,16 +140,17 @@ public class CardEntityHolder : MonoBehaviour
         cardEntityRect.DOScale(2.5f, 0.1f);
         _pickedCard = entity;
     }
-
+    
+    // if hover 3, and picked 5 -> hover:3 picked:4 4-> 5
+    // if hover 2 and picked 5 -> hover:2 picked 3 , 3-> 4  , 4 -> 5
+    // if hover 5, and picked 3 -> hover: 4, picked 5, 4 -> 3, 
     public void HoverOver(CardEntity entity)
     {
         if (!_pickedCard) return;
-        int pickedCardIndex = cardEntities.FindIndex(x => x == _pickedCard);
+        
+        cardEntities.Remove(_pickedCard);
         int hoverOverIndex = cardEntities.FindIndex(x => x == entity);
-
-        cardEntities[pickedCardIndex] = entity;
-        cardEntities[hoverOverIndex] = _pickedCard;
-
+        cardEntities.Insert(hoverOverIndex + 1 , _pickedCard);
         FixPlacement();
     }
 
