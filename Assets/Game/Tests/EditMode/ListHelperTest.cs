@@ -7,7 +7,7 @@ using CardSorting.Helpers;
 public class ListHelperTest
 {
     /// <summary>
-    /// Tests ListHelper.GetAllCombos function. 
+    /// Tests ListHelper. GetAllCombos function. 
     /// </summary>
     [Test]
     public void ListCombinationTest()

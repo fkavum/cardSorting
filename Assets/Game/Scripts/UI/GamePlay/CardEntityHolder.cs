@@ -5,6 +5,7 @@ using CardSorting.UI.Gameplay;
 using CardSorting.Utils;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Serialization;
 
 /// <summary>
 /// This is a card holder class.
@@ -16,10 +17,9 @@ public class CardEntityHolder : MonoBehaviour
     public RectTransform endPoint;
     public RectTransform controlPoint;
 
-    public CubicBezier _bezier;
-    public CardEntity _pickedCard;
-
-    public List<CardEntity> cardEntities;
+    private CubicBezier _bezier;
+    [HideInInspector]public List<CardEntity> cardEntities;
+    [HideInInspector]public CardEntity pickedCard;
     [HideInInspector] public TableEntity tableEntity;
 
 
@@ -141,7 +141,7 @@ public class CardEntityHolder : MonoBehaviour
         RectTransform cardEntityRect = entity.GetComponent<RectTransform>();
         cardEntityRect.SetSiblingIndex(transform.childCount - 1);
         cardEntityRect.DOScale(2.5f, 0.1f);
-        _pickedCard = entity;
+        pickedCard = entity;
     }
     
     // if hover 3, and picked 5 -> hover:3 picked:4 4-> 5
@@ -149,15 +149,12 @@ public class CardEntityHolder : MonoBehaviour
     // if hover 5, and picked 3 -> hover: 4, picked 5, 4 -> 3, 
     public void HoverOver(CardEntity entity)
     {
-        if (!_pickedCard) return;
+        if (!pickedCard) return;
         
-        cardEntities.Remove(_pickedCard);
+        cardEntities.Remove(pickedCard);
         int hoverOverIndex = cardEntities.FindIndex(x => x == entity);
-        cardEntities.Insert(hoverOverIndex + 1 , _pickedCard);
+        cardEntities.Insert(hoverOverIndex + 1 , pickedCard);
         Animate(0.15f, hoverOverIndex + 1);
     }
-
-    public void PutOver(CardEntity entity)
-    {
-    }
+   
 }

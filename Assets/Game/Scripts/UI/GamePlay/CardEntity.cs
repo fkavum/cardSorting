@@ -66,7 +66,7 @@ namespace CardSorting.UI.Gameplay
         public void OnPointerUp(PointerEventData eventData)
         {
             if(!holder) return;
-            holder._pickedCard = null;
+            holder.pickedCard = null;
             holder.FixPlacement();
             _rectTransform.DOScale(2f, .1f);
         }

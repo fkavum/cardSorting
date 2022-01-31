@@ -5,6 +5,9 @@ using CardSorting.GamePlay.Sorting;
 
 public class SameNumberSorterTest
 {
+    /// <summary>
+    /// Test of 777 sorting algorithm.
+    /// </summary>
     [Test]
     public void CheckSorting()
     {

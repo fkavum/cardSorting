@@ -35,7 +35,6 @@ namespace CardSorting.UI
                 {
                     //Change the Text to show the Scene is ready
                     text = "Press the space bar to continue";
-                    //Wait to you press the space key to activate the Scene
                     if (!loadingAnimationScreen.isAnimating)
                         //Activate the Scene
                         asyncOperation.allowSceneActivation = true;

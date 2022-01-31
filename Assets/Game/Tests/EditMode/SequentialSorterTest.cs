@@ -5,6 +5,9 @@ using CardSorting.GamePlay.Sorting;
 
 public class SequentialSorterTest
 {
+    /// <summary>
+    /// Test of 123 algorithm
+    /// </summary>
     [Test]
     public void CheckSorting()
     {

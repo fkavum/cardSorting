@@ -44,6 +44,14 @@ namespace CardSorting.Helpers
             return result;
         }
 
+        /// <summary>
+        /// Check if sortedCardList In the given card group.
+        /// SortedCardList means, cardList should have the exact order in the search list.
+        /// You can search it via unsorted method too, but unsorted one is little more costy.
+        /// </summary>
+        /// <param name="cardList"></param>
+        /// <param name="cardGroup"></param>
+        /// <returns></returns>
         public static bool IsSortedCardListInTheCardGroup(List<Card> cardList, List<List<Card>> cardGroup)
         {
             foreach (var sortedCardList in cardGroup)
@@ -57,6 +65,12 @@ namespace CardSorting.Helpers
             return false;
         }
 
+        /// <summary>
+        /// Unsorted means cards order in the cardList not matter.  
+        /// </summary>
+        /// <param name="cardList"></param>
+        /// <param name="cardGroup"></param>
+        /// <returns></returns>
         public static bool IsUnsortedCardListInTheCardGroup(List<Card> cardList, List<List<Card>> cardGroup)
         {
             foreach (var sortedCardList in cardGroup)
@@ -105,6 +119,11 @@ namespace CardSorting.Helpers
         }
 
 
+        /// <summary>
+        /// Checks if all of the total cards in the card group are unique. (Which means are from one deck)
+        /// </summary>
+        /// <param name="cardGroup"></param>
+        /// <returns></returns>
         public static bool IsOneDeckCardGroup(List<List<Card>> cardGroup)
         {
             foreach (List<Card> cards in cardGroup)
@@ -121,6 +140,12 @@ namespace CardSorting.Helpers
             return true;
         }
 
+        /// <summary>
+        /// Checks the number of duplicates of the searched card in the cardGroup
+        /// </summary>
+        /// <param name="searchedCard"></param>
+        /// <param name="cardGroup"></param>
+        /// <returns></returns>
         private static int GetSearchedCardCountInTheCardGroup(Card searchedCard, List<List<Card>> cardGroup)
         {
             int cardCount = 0;

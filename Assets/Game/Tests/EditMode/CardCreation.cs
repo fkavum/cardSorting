@@ -2,6 +2,10 @@ using NUnit.Framework;
 using CardSorting.GamePlay;
 public class CardCreation
 {
+    
+    /// <summary>
+    /// Test for Card class initialization to see if cardType and cardNumber variable calculations are correct.
+    /// </summary>
     [Test]
     public void DeckCardNumberToOthers()
     {

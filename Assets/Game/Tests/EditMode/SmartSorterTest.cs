@@ -5,6 +5,9 @@ using CardSorting.GamePlay.Sorting;
 
 public class SmartSorterTest
 {
+    /// <summary>
+    /// Test of smart sort algorthm
+    /// </summary>
     [Test]
     public void CheckSorting()
     {
